@@ -41,4 +41,91 @@ public class Peso {
     public double DAG_DG (double peso){
         return peso * 100;
     }
-}
+    public double DAG_CG (double peso){
+        return peso * 1000;
+    }
+    public double DAG_MG (double peso) {
+        return peso * 10000;
+    }
+    public double G_DG (double peso) {
+        return peso * 10;
+    }
+    public double G_CG (double peso) {
+        return peso * 100;
+    }
+    public double G_MG (double peso) {
+        return peso * 1000;
+    }
+    public double DG_CG (double peso) {
+        return peso * 10;
+    }
+    public double DG_MG (double peso) {
+        return peso * 100;
+    }
+    public double CG_MG (double peso) {
+        return peso * 10;
+    }
+    public double MG_CG (double peso) {
+        return peso * (1 / 10);
+    }
+    public double MG_DG (double peso) {
+        return peso * (1 / 100);
+    }
+    public double MG_G (double peso) {
+        return peso * (1 / 1000);
+    }
+    public double MG_DAG (double peso) {
+        return peso * (1 / 10000);
+    }
+    public double MG_HG (double peso) {
+        return peso * (1 / 100000);
+    }
+    public double MG_KG (double peso) {
+        return peso * (1 / 1000000);
+    }
+    public double CG_DG (double peso) {
+        return peso * (1 / 10);
+    }
+    public double CG_G (double peso) {
+        return peso * (1 / 100);
+    }
+    public double CG_DAG (double peso) {
+        return peso * (1 / 1000);
+    }
+    public double CG_HG (double peso) {
+        return peso * (1 / 10000);
+    }
+    public double CG_KG (double peso) {
+        return peso * (1 / 100000);
+    }
+    public double DG_G (double peso) {
+        return peso * (1 / 10);
+    }
+    public double DG_DAG (double peso) {
+        return peso * (1 / 100);
+    }
+    public double DG_HG (double peso) {
+        return peso * (1 / 1000);
+    }
+    public double DG_KG (double peso) {
+        return peso * (1 / 10000);
+    }
+    public double G_DAG (double peso) {
+        return peso * (1 / 10);
+    }
+    public double G_HG (double peso) {
+        return peso * (1 / 100);
+    }
+    public double G_KG (double peso) {
+        return peso * (1 / 1000);
+    }
+    public double DAG_HG (double peso) {
+        return peso * (1 / 10);
+    }
+    public double DAG_KG (double peso) {
+        return peso * (1 / 100);
+    }
+    public double HG_KG (double peso) {
+        return peso * (1 / 10);
+    }
+}  
