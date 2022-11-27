@@ -1,0 +1,172 @@
+package Cambio_De_Unidades;
+
+public class Longitud {
+
+    public double KM_HM(double distancia) {
+        return distancia * 10;
+    }
+
+    public double KM_DAM(double distancia) {
+        return distancia * 100;
+    }
+
+    public double KM_M(double distancia) {
+        return distancia * 1000;
+    }
+
+    public double KM_DM(double distancia) {
+        return distancia * 10000;
+    }
+
+    public double KM_CM(double distancia) {
+        return distancia * 100000;
+    }
+
+    public double KM_MM(double distancia) {
+        return distancia * 1000000;
+    }
+
+    public double HM_DAM(double distancia) {
+        return distancia * 10;
+    }
+
+    public double HM_M(double distancia) {
+        return distancia * 100;
+    }
+
+    public double HM_DM(double distancia) {
+        return distancia * 1000;
+    }
+
+    public double HM_CM(double distancia) {
+        return distancia * 10000;
+    }
+
+    public double HM_MM(double distancia) {
+        return distancia * 100000;
+    }
+
+    public double DAM_M(double distancia) {
+        return distancia * 10;
+    }
+
+    public double DAM_DM(double distancia) {
+        return distancia * 100;
+    }
+
+    public double DAM_CM(double distancia) {
+        return distancia * 1000;
+    }
+
+    public double DAM_MM(double distancia) {
+        return distancia * 10000;
+    }
+
+    public double M_DM(double distancia) {
+        return distancia * 10;
+    }
+
+    public double M_CM(double distancia) {
+        return distancia * 100;
+    }
+
+    public double M_MM(double distancia) {
+        return distancia * 1000;
+    }
+
+    public double DM_CM(double distancia) {
+        return distancia * 10;
+    }
+
+    public double DM_MM(double distancia) {
+        return distancia * 100;
+    }
+
+    public double CM_MM(double distancia) {
+        return distancia * 10;
+    }
+
+    public double MM_CM(double distancia) {
+        return distancia * (1 / 10);
+    }
+
+    public double MM_DM(double distancia) {
+        return distancia * (1 / 100);
+    }
+
+    public double MM_M(double distancia) {
+        return distancia * (1 / 1000);
+    }
+
+    public double MM_DAM(double distancia) {
+        return distancia * (1 / 10000);
+    }
+
+    public double MM_HM(double distancia) {
+        return distancia * (1 / 100000);
+    }
+
+    public double MM_KM(double distancia) {
+        return distancia * (1 / 1000000);
+    }
+
+    public double CM_DM(double distancia) {
+        return distancia * (1 / 10);
+    }
+
+    public double CM_M(double distancia) {
+        return distancia * (1 / 100);
+    }
+
+    public double CM_DAM(double distancia) {
+        return distancia * (1 / 1000);
+    }
+
+    public double CM_HM(double distancia) {
+        return distancia * (1 / 10000);
+    }
+
+    public double CM_KM(double distancia) {
+        return distancia * (1 / 100000);
+    }
+
+    public double DM_M(double distancia) {
+        return distancia * (1 / 10);
+    }
+
+    public double DM_DAM(double distancia) {
+        return distancia * (1 / 100);
+    }
+
+    public double DM_HM(double distancia) {
+        return distancia * (1 / 1000);
+    }
+
+    public double DM_KM(double distancia) {
+        return distancia * (1 / 100000);
+    }
+
+    public double M_DAM(double distancia) {
+        return distancia * (1 / 10);
+    }
+
+    public double M_HM(double distancia) {
+        return distancia * (1 / 100);
+    }
+
+    public double M_KM(double distancia) {
+        return distancia * (1 / 1000);
+    }
+
+    public double DAM_HM(double distancia) {
+        return distancia * (1 / 10);
+    }
+
+    public double DAM_KM(double distancia) {
+        return distancia * (1 / 100);
+    }
+
+    public double HM_KM(double distancia) {
+        return distancia * (1 / 10);
+    }
+}
