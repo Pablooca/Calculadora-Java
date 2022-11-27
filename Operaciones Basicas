@@ -1,0 +1,39 @@
+package Operaciones;
+
+import Excepciones.DivisionPorCeroException;
+
+public class Operaciones_Basicas {
+
+    public Operaciones_Basicas() {
+    }
+    
+    public double suma (double a, double b){
+        return a+b;
+    }
+    public double resta (double a, double b){
+        return a-b;
+    }
+    public double multiplicacion (double a, double b){
+        return a*b;
+    }
+    public double division (double a, double b) throws DivisionPorCeroException{
+        if (b == 0){
+            throw new DivisionPorCeroException ("El denominador no puede ser cero");
+        }
+        else {
+            return a / b;
+        }
+    }
+    public double modulo (double a, double b) throws DivisionPorCeroException{
+        if (b == 0){
+            throw new DivisionPorCeroException ("El denominador no puede ser cero");
+        }
+        else {
+            return a % b;
+        }
+    }
+    public void Menu (){
+        System.out.println ("Opcion 1: Suma \nOpcion 2: Resta \nOpcion 3: Multiplicacion"
+                + "\nOpcion 4: Division \nOpcion 5: Resto");
+    }
+}
