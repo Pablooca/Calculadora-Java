@@ -1,0 +1,16 @@
+package Resolucion_Ecuaciones;
+
+public class Segundo_Grado {
+    
+    public double discriminante (double a, double b, double c){
+        return Math.sqrt(Math.pow(b, 2) - 4 * a * c);
+    }
+    
+    public double solucion_positiva (double a, double b, double c){
+        return (-b + (discriminante(a,b,c))) / (2 * a);
+    }
+    
+    public double solucion_negativa (double a, double b, double c){
+        return (-b - discriminante (a,b,c)) / (2 * a);
+    }
+}
