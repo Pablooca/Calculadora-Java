@@ -1,0 +1,69 @@
+package Operaciones;
+
+import Excepciones.MatricesDistintoIndiceException;
+
+public class Operaciones_Algebra {
+
+    public void suma_matrices(double matriz1[][], double matriz2[][], int nfil1, int ncol1, int nfil2, int ncol2) throws MatricesDistintoIndiceException {
+        if (nfil1 != nfil2 || ncol1 != ncol2) {
+            throw new MatricesDistintoIndiceException("Las matrices no se pueden sumar");
+        } else {
+            double matrizSolucion[][] = new double[nfil1][ncol1];
+            System.out.println("Matriz Suma: \n");
+            for (int i = 0; i < nfil1; i++) {
+                for (int j = 0; j < ncol1; j++) {
+                    matrizSolucion[i][j] = matriz1[i][j] + matriz2[i][j];
+                    System.out.print("\t" + matrizSolucion[i][j]);
+                }
+                System.out.print("\n");
+            }
+        }
+    }
+
+    public void resta_matrices(double matriz1[][], double matriz2[][], int nfil1, int ncol1, int nfil2, int ncol2) throws MatricesDistintoIndiceException {
+        if (nfil1 != nfil2 || ncol1 != ncol2) {
+            throw new MatricesDistintoIndiceException("Las matrices no se pueden sumar");
+        } else {
+            double matrizSolucion[][] = new double[nfil1][ncol1];
+            System.out.println("Matriz Resta: \n");
+            for (int i = 0; i < nfil1; i++) {
+                for (int j = 0; j < ncol1; j++) {
+                    matrizSolucion[i][j] = matriz1[i][j] - matriz2[i][j];
+                    System.out.print("\t" + matrizSolucion[i][j]);
+                }
+                System.out.print("\n");
+            }
+        }
+    }
+
+    public double Determinante_2x2(double matriz1[][]) {
+        return matriz1[0][0] * matriz1[1][1] - matriz1[0][1] * matriz1[1][0];
+    }
+
+    public double Determinante_3x3(double matriz1[][]) {
+        double dp = matriz1[0][0] * matriz1[1][1] * matriz1[2][2];
+        double dpb = matriz1[1][0] * matriz1[2][1] * matriz1[0][2];
+        double dpa = matriz1[0][1] * matriz1[1][2] * matriz1[2][0];
+        double ds = matriz1[0][2] * matriz1[1][1] * matriz1[2][0];
+        double dsa = matriz1[0][1] * matriz1[1][0] * matriz1[2][2];
+        double dsb = matriz1[1][2] * matriz1[2][1] * matriz1[0][0];
+
+        double diagonalPrincipal = dp + dpb + dpa;
+        double diagonalSecundaria = ds + dsa + dsb;
+        return diagonalPrincipal - diagonalSecundaria;
+    }
+    
+    public double modulo_Vectores (double vector[]){
+        double resul = 0;
+        for (int i = 0; i < vector.length; i++){
+            resul = resul + Math.pow(vector[i], 2);
+        }
+        return Math.sqrt(resul);
+    }
+    
+    public void Menu (){
+        System.out.println ("Opcion 1: Suma de Matrices \nOpcion 2: Resta de Matrices \nOpcion 3: Determinante 2x2"
+                + "\nOpcion 4: Determinante 3x3 \nOpcion 5: Modulo de vectores");
+    }
+
+}
