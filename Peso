@@ -20,4 +20,19 @@ public class Peso {
     public double KG_MG (double peso) {
         return peso * 1000000;
     }
+    public double HG_DAG (double peso) {
+        return peso * 10;
+    }
+    public double HG_G (double peso) {
+        return peso * 100;
+    }
+    public double HG_DG (double peso) {
+        return peso * 1000;
+    }
+    public double HG_CG (double peso) {
+        return peso * 10000;
+    }
+    public double HG_MG (double peso) {
+        return peso * 100000;
+    }
 }
