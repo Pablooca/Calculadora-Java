@@ -1,0 +1,28 @@
+package Operaciones;
+
+import static java.lang.Math.*;
+
+
+public class Operaciones_Calculo {
+    
+    public double potencia (double a, double b){
+        return pow(a, b);
+    }
+    public double raiz_Cuadrada (double a){
+        return sqrt(a);
+    }
+    public double logaritmo_Base_10 (double a){
+        return log10(a);
+    }
+    public double logaritmo_Neperiano (double a){
+        return log (a);
+    }
+    public double logaritmo_Cualquier_Base (double a, double b){
+        return log (a) / log (b);
+    }
+    
+    public void Menu (){
+        System.out.println ("Opcion 1: Potencia \nOpcion 2: Raiz Cuadrada \nOpcion 3: Logaritmo Base 10"
+                + "\nOpcion 4: Logaritmo Neperiano \nOpcion 5: Logaritmo");
+    }
+}
