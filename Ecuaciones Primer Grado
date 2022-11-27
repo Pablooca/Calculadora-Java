@@ -1,0 +1,8 @@
+package Resolucion_Ecuaciones;
+
+public class Primer_Grado {
+    
+    public double Ecuacion_Primer_Grado (double a, double b){
+        return -b/a;
+    }
+}
