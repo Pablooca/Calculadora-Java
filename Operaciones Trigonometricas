@@ -1,0 +1,33 @@
+package Operaciones;
+
+import static java.lang.Math.*;
+
+
+public class Operaciones_Trigonometricas {
+    double radianes;
+    
+    private double a_Radianes (double radianes){
+        return toRadians(radianes);
+    }
+    
+    
+    public double seno (double a){
+        radianes = a_Radianes (a);
+        
+        return floor(sin(radianes));
+    }
+    
+    public double coseno (double a){
+        radianes = a_Radianes (a);
+        return floor(cos(radianes));
+    }
+    
+    public double tangente (double a){
+        radianes = a_Radianes (a);
+        return floor(tan(radianes));
+    }
+    
+    public void Menu (){
+        System.out.println ("Opcion 1: Seno \nOpcion 2: Coseno \nOpcion 3: Tangente");
+    }
+}
