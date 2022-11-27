@@ -2,5 +2,22 @@ package Cambio_De_Unidades;
 
 
 public class Peso {
-    
+    public double KG_HG (double peso){
+        return peso * 10;
+    }
+    public double KG_DAG (double peso) {
+        return peso * 100;
+    }
+    public double KG_G (double peso) {
+        return peso * 1000;
+    }
+    public double KG_DG (double peso) {
+        return peso * 10000;
+    }
+    public double KG_CG (double peso) {
+        return peso * 100000;
+    }
+    public double KG_MG (double peso) {
+        return peso * 1000000;
+    }
 }
